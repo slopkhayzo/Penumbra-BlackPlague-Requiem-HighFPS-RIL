@@ -42,6 +42,13 @@ a binary compiled against different offsets.
 
 The first lines of `PenumbraBlackPlague.FPSFix.log` name the selected adapter.
 
+The Steam executables are a 2009 relink wrapped in SteamStub DRM, so their
+files differ from GOG's and `.text` is encrypted on disk. Once the stub has
+decrypted it, the same two adapters accept them unchanged: all 43 signatures
+resolve, and every function the plugin hooks is instruction-for-instruction
+identical to the GOG build at a different address. The log then reports
+`reference build=false`, which is expected.
+
 ## Status
 
 Counts are from the plugin's own telemetry over about 25 minutes of *Black

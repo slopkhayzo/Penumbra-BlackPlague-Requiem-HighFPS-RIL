@@ -2,11 +2,11 @@ PenumbraBlackPlague.FPSFix
 ==========================
 
 High-frame-rate fix for Penumbra: Black Plague and Penumbra: Requiem
-(Windows, GOG build). The games normally render at 60 FPS because rendering
-is tied to the 60 Hz game logic. This plugin lets them render at your
-display's refresh rate while logic and physics stay at their original 60 Hz,
-and smooths the camera, hands, objects, characters, particles, and mouse look
-between logic steps.
+(Windows, GOG and Steam builds). The games normally render at 60 FPS because
+rendering is tied to the 60 Hz game logic. This plugin lets them render at
+your display's refresh rate while logic and physics stay at their original
+60 Hz, and smooths the camera, hands, objects, characters, particles, and
+mouse look between logic steps.
 
 One installation covers both games: Penumbra.exe (Black Plague) and
 Requiem.exe live in the same folder, and the plugin detects which one is
@@ -20,6 +20,8 @@ Install
 1. Open the game's "redist" folder, the one that contains Penumbra.exe and
    Requiem.exe. For GOG this is usually
    ...\GOG Games\Penumbra - Black Plague\redist
+   and for Steam (Black Plague and Requiem share it)
+   ...\steamapps\common\Penumbra Black Plague\redist
 2. Copy into it:
      PenumbraBlackPlague.FPSFix.asi
      PenumbraBlackPlague.FPSFix.ini
@@ -46,7 +48,7 @@ plugin. Its first lines should include
 
 If it says "failed closed" instead, the plugin did not recognize your
 executable and has left the game completely unmodified. That is expected for
-builds other than the GOG one.
+builds other than the GOG and Steam ones.
 
 
 Settings
